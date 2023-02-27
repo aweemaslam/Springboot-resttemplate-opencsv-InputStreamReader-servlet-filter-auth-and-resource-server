@@ -1,0 +1,299 @@
+{
+  "info": {
+    "_postman_id": "a832f73f-5fb6-4035-b23b-474037e4d1ae",
+    "name": "assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "localhost:8080/public/oauth/token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"faraz\"}"
+        },
+        "url": {
+          "raw": "localhost:8080/public/oauth/token",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "public",
+            "oauth",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/public/oauth/getCurrentLoggedInUsers",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEyNTUsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjRjM2QyZjQ2LTQwMDctNGMzYy04MGI0LTY3YmRmZjg4MjlmZSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.I5ha9L6GcsxDOilxRJhYO5MJiQlOrdTQLQeS_qAIAMcBY0f48wNNr3UuxI5F7-b1qBcIRFzwvGnN8IThH4-z1ilwgFzEy8gk1pSmYpvFQZcjdfyJwR0Z7I92ziyX5QHmLmbV57g3WpoI-vi8wCg7hQYM1PwkVQlD03m6xrd87_iE4KLuT8KYSISgWdOK1jlyuc4XqcTRzrt8zGUtgkBSt-q1eyNBqTJ-OcP1a9OtO05BmoOk74F0wcNF48GCsYyfTTLyZexAYC5YNRxEb4AUvAZUVm2PzWvIj0KsC1fgDDhr_EIK-2whnrKOIczrdmEv-z2zmi3zf_ObnxouAcUZe5Nq09oQLbtg-dEdaVYYXwmyLeoxk8dpKL5DXm3zO8IWwbn0Y_bc8ondgerZthiqeFCmw2cwTMIkXv5qwT-qSprQzarpP-C04ljAyoJePItWwEc3YvKNf1uXYiPUwAPAxgVCqUz6zAb19m65_5y5Wli3Gnyx66PlPxPTWAf8-oxGOOeqPtul0CthdUlDDSEE5XNG1-xbdOYUGfQFDBgdZEG8-J8Ldopr1eHKO4Hp_GI1TZM9Sf7KffbHGVp-fydKwhcFMWXbgvmDSELRLNxC3q6jWtVSRvR8st5J6XXh7xUtwHPih5cOQkPQEe0SWjS-q2hv4bxZ6nG3YBMElb11vHE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getCurrentLoggedInUsers",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getCurrentLoggedInUsers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/public/oauth/revokAllTokens",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/public/oauth/revokAllTokens",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "public",
+            "oauth",
+            "revokAllTokens"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/analytics/getAllCasesReportedToday",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEzMTcsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImVkYTU4MWVkLTkyY2UtNDg1ZS1hYTRmLTZmNDgzZjNiNGMyYSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.MP9aJk1PB6Ou5mlrb02Qz8JSrISPAFsP2gHSa28MxV7XNjlMHaenew3dhIByBxg22NfaTvyc5sU5mY7sK_I5sCk05SnR7R8gpMFeqE0r9VhcMcffkgChYpj7rztRxOKwQs-15G3nJnNT7T7oH28p_GotZt1gnAQzE8qe0XC9TOTCAPDL0Z40ZcXm4GeJ7DB-LHeykVu7S67G8X4ZnHYepGLMBGCw15V01dBdbEhcECJwSa1CthD-51P8ZFo2-MON-ybNze1630kbiLfTFxnwuECFPQUxYHhDwpjMl5HisKXfX_bYJywQxaPAwXHCT770DaCpLlJO485fdy1MSmVErd86dtO4lu9qeMAn-8pTmgqiArO_FZ3m6Dkf_x_KGdvDdJ_Pyu-WTraT2i8XcHuczf1CCUUaJeYztdJOfDKYWA_3y-mk6EBcfMiJUy94fBmkWikhe66nZBSmLSorZh9ITVYho8l9hUUI-JaaIDsny8P5ER08weOEuXi_yIpYojTJVXRodYrzAdAVWCT39_AOE_4rlYS6efmXp6IpTHMc3x3AVJbLdkpytcV1F_oS5wzdtxp36i-X9GDEhTokW3asN0VEvWakTdC-6ds7PUXIpKfzIypNMSPZ3c3P0LRAgLDnpIop61ODHz3k3KdSk3ynPGrX9cpbrYRKofagOIT6Gns",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getAllCasesReportedToday",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getAllCasesReportedToday"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/analytics/getAllCasesReportedTodayCountryWise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEzMTcsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImVkYTU4MWVkLTkyY2UtNDg1ZS1hYTRmLTZmNDgzZjNiNGMyYSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.MP9aJk1PB6Ou5mlrb02Qz8JSrISPAFsP2gHSa28MxV7XNjlMHaenew3dhIByBxg22NfaTvyc5sU5mY7sK_I5sCk05SnR7R8gpMFeqE0r9VhcMcffkgChYpj7rztRxOKwQs-15G3nJnNT7T7oH28p_GotZt1gnAQzE8qe0XC9TOTCAPDL0Z40ZcXm4GeJ7DB-LHeykVu7S67G8X4ZnHYepGLMBGCw15V01dBdbEhcECJwSa1CthD-51P8ZFo2-MON-ybNze1630kbiLfTFxnwuECFPQUxYHhDwpjMl5HisKXfX_bYJywQxaPAwXHCT770DaCpLlJO485fdy1MSmVErd86dtO4lu9qeMAn-8pTmgqiArO_FZ3m6Dkf_x_KGdvDdJ_Pyu-WTraT2i8XcHuczf1CCUUaJeYztdJOfDKYWA_3y-mk6EBcfMiJUy94fBmkWikhe66nZBSmLSorZh9ITVYho8l9hUUI-JaaIDsny8P5ER08weOEuXi_yIpYojTJVXRodYrzAdAVWCT39_AOE_4rlYS6efmXp6IpTHMc3x3AVJbLdkpytcV1F_oS5wzdtxp36i-X9GDEhTokW3asN0VEvWakTdC-6ds7PUXIpKfzIypNMSPZ3c3P0LRAgLDnpIop61ODHz3k3KdSk3ynPGrX9cpbrYRKofagOIT6Gns",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getAllCasesReportedTodayCountryWise",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getAllCasesReportedTodayCountryWise"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/analytics/getReportedCasesByCountryName?countryName=pakistan",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEzMTcsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImVkYTU4MWVkLTkyY2UtNDg1ZS1hYTRmLTZmNDgzZjNiNGMyYSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.MP9aJk1PB6Ou5mlrb02Qz8JSrISPAFsP2gHSa28MxV7XNjlMHaenew3dhIByBxg22NfaTvyc5sU5mY7sK_I5sCk05SnR7R8gpMFeqE0r9VhcMcffkgChYpj7rztRxOKwQs-15G3nJnNT7T7oH28p_GotZt1gnAQzE8qe0XC9TOTCAPDL0Z40ZcXm4GeJ7DB-LHeykVu7S67G8X4ZnHYepGLMBGCw15V01dBdbEhcECJwSa1CthD-51P8ZFo2-MON-ybNze1630kbiLfTFxnwuECFPQUxYHhDwpjMl5HisKXfX_bYJywQxaPAwXHCT770DaCpLlJO485fdy1MSmVErd86dtO4lu9qeMAn-8pTmgqiArO_FZ3m6Dkf_x_KGdvDdJ_Pyu-WTraT2i8XcHuczf1CCUUaJeYztdJOfDKYWA_3y-mk6EBcfMiJUy94fBmkWikhe66nZBSmLSorZh9ITVYho8l9hUUI-JaaIDsny8P5ER08weOEuXi_yIpYojTJVXRodYrzAdAVWCT39_AOE_4rlYS6efmXp6IpTHMc3x3AVJbLdkpytcV1F_oS5wzdtxp36i-X9GDEhTokW3asN0VEvWakTdC-6ds7PUXIpKfzIypNMSPZ3c3P0LRAgLDnpIop61ODHz3k3KdSk3ynPGrX9cpbrYRKofagOIT6Gns",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getReportedCasesByCountryName?countryName=pakistan",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getReportedCasesByCountryName"
+          ],
+          "query": [
+            {
+              "key": "countryName",
+              "value": "pakistan"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/analytics/getTopNReportedCases?limit=50",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEzMTcsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImVkYTU4MWVkLTkyY2UtNDg1ZS1hYTRmLTZmNDgzZjNiNGMyYSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.MP9aJk1PB6Ou5mlrb02Qz8JSrISPAFsP2gHSa28MxV7XNjlMHaenew3dhIByBxg22NfaTvyc5sU5mY7sK_I5sCk05SnR7R8gpMFeqE0r9VhcMcffkgChYpj7rztRxOKwQs-15G3nJnNT7T7oH28p_GotZt1gnAQzE8qe0XC9TOTCAPDL0Z40ZcXm4GeJ7DB-LHeykVu7S67G8X4ZnHYepGLMBGCw15V01dBdbEhcECJwSa1CthD-51P8ZFo2-MON-ybNze1630kbiLfTFxnwuECFPQUxYHhDwpjMl5HisKXfX_bYJywQxaPAwXHCT770DaCpLlJO485fdy1MSmVErd86dtO4lu9qeMAn-8pTmgqiArO_FZ3m6Dkf_x_KGdvDdJ_Pyu-WTraT2i8XcHuczf1CCUUaJeYztdJOfDKYWA_3y-mk6EBcfMiJUy94fBmkWikhe66nZBSmLSorZh9ITVYho8l9hUUI-JaaIDsny8P5ER08weOEuXi_yIpYojTJVXRodYrzAdAVWCT39_AOE_4rlYS6efmXp6IpTHMc3x3AVJbLdkpytcV1F_oS5wzdtxp36i-X9GDEhTokW3asN0VEvWakTdC-6ds7PUXIpKfzIypNMSPZ3c3P0LRAgLDnpIop61ODHz3k3KdSk3ynPGrX9cpbrYRKofagOIT6Gns",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getTopNReportedCases?limit=50",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getTopNReportedCases"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "50"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/analytics/getCasesCountByCountryAndDate?countryName=Angola&date=5/8/20",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk3NjEzMTcsInVzZXJfbmFtZSI6ImZhcmF6IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImVkYTU4MWVkLTkyY2UtNDg1ZS1hYTRmLTZmNDgzZjNiNGMyYSIsImNsaWVudF9pZCI6ImNsaWVudCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.MP9aJk1PB6Ou5mlrb02Qz8JSrISPAFsP2gHSa28MxV7XNjlMHaenew3dhIByBxg22NfaTvyc5sU5mY7sK_I5sCk05SnR7R8gpMFeqE0r9VhcMcffkgChYpj7rztRxOKwQs-15G3nJnNT7T7oH28p_GotZt1gnAQzE8qe0XC9TOTCAPDL0Z40ZcXm4GeJ7DB-LHeykVu7S67G8X4ZnHYepGLMBGCw15V01dBdbEhcECJwSa1CthD-51P8ZFo2-MON-ybNze1630kbiLfTFxnwuECFPQUxYHhDwpjMl5HisKXfX_bYJywQxaPAwXHCT770DaCpLlJO485fdy1MSmVErd86dtO4lu9qeMAn-8pTmgqiArO_FZ3m6Dkf_x_KGdvDdJ_Pyu-WTraT2i8XcHuczf1CCUUaJeYztdJOfDKYWA_3y-mk6EBcfMiJUy94fBmkWikhe66nZBSmLSorZh9ITVYho8l9hUUI-JaaIDsny8P5ER08weOEuXi_yIpYojTJVXRodYrzAdAVWCT39_AOE_4rlYS6efmXp6IpTHMc3x3AVJbLdkpytcV1F_oS5wzdtxp36i-X9GDEhTokW3asN0VEvWakTdC-6ds7PUXIpKfzIypNMSPZ3c3P0LRAgLDnpIop61ODHz3k3KdSk3ynPGrX9cpbrYRKofagOIT6Gns",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:8080/analytics/getCasesCountByCountryAndDate?countryName=Angola&date=5/8/20",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "analytics",
+            "getCasesCountByCountryAndDate"
+          ],
+          "query": [
+            {
+              "key": "countryName",
+              "value": "Angola"
+            },
+            {
+              "key": "date",
+              "value": "5/8/20",
+              "description": "MM/dd/yy"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
